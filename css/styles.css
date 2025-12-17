@@ -26,8 +26,8 @@ body {
 
 .container {
     width: 1158px;
-    margin:0 auto;
-    padding:0 15px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .top-text {
@@ -128,8 +128,17 @@ li {
 }
 
 .main-page {
-    background: #2e2f42;
+    background-color: #2e2f42;
+    background-image:  linear-gradient( 
+        to bottom,
+         rgba(46, 47, 66, 0.7),
+         rgba(46, 47, 66, 0.7) 
+         ), 
+         url(/images/people-office\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 188px 0;
+    max-width:1440рх;
 }
 
 .main-page-name {
@@ -191,8 +200,27 @@ button:focus {
 }
 
 .features-item {
-    width: calc((100% - 72px) / 4);
+    
 }
+
+.features-icon {
+display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    background-color: #F7F9FF;
+    margin-bottom: 8px;
+    width:264px; 
+    height: 112px;
+}
+
+.features-logo {
+    width: 64px;
+        height: 64px;
+        display: block;
+}
+
 
 .features-content {
     display: flex;
@@ -257,6 +285,7 @@ p {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow:0px 3px 4px 0px rgba(0, 0, 0, 0.14);
 }
 
 .team-member {
@@ -281,10 +310,40 @@ p {
     text-align: center;
 }
 
-.portfolio-item {
+
+.overlay-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.overlay-box:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay-text {
+    color: #F4F4FD;
+    margin: 40px 32px auto;
+}
+
+.portfolio-item-name {
     text-align: left;
     margin-bottom: 8px;
 
+}
+
+.portfolio-item:hover {
+    box-shadow:0px 3px 4px 0px rgba(0, 0, 0, 0.14);
 }
 
 .portfolio-line {
@@ -295,7 +354,6 @@ p {
 
 .portfolio-desc {
     text-align: left;
-    margin-left: 16px;
     margin-bottom: 32px;
 }
 
