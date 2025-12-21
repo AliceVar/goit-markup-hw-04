@@ -108,6 +108,17 @@ li {
     color: #404bbf
 }
 
+.active-link:active::after {
+    content:"";
+    display:inline-block;
+    height: 4px;
+    width: 100%;
+    background-color: #404BBF;
+    border-radius: 2px;
+
+    
+}
+
 .contacts {
     font-style: normal;
     margin-left:auto;
@@ -297,6 +308,30 @@ p {
     font-size: 16px;
     text-align: center;
 }
+.team-socials {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 24px;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+.team-socials-item {
+    background: #4d5ae5;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.team-social-icon {
+    fill:white;
+
+}
+
 
 .section-portfolio {
     padding-top: 120px;
@@ -373,7 +408,16 @@ footer {
 
 .bottom {
     padding: 100px 0;
+    background: #2e2f42;
 
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 120px;
+    margin: 
 }
 
 .footer-link {
@@ -401,4 +445,42 @@ footer {
 
 .studio-text {
     color: #f4f4fd
+}
+
+.footer-media {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left:0;
+
+}
+
+.footer-media-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    text-align: left;
+    max-width: 264px
+
+}
+
+.footer-socials {
+    display: flex;
+        gap: 16px;
+}
+
+.footer-socials-item {
+    background: #4d5ae5;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-icon {
+    fill: white;
+
 }
