@@ -417,7 +417,6 @@ footer {
     align-items: center;
     justify-content: flex-start;
     gap: 120px;
-    margin: 
 }
 
 .footer-link {
@@ -433,6 +432,7 @@ footer {
     text-align: left;
     display: inline-block;
 }
+
 
 .footer-text {
     font-size: 16px;
