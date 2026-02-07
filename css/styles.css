@@ -484,8 +484,9 @@ footer {
 
 }
 
-.footer-socials-item:hover {
-   background: #31D0AA:
+.footer-socials-item:hover,
+.footer-socials-item:focus {
+    background-color: #31d0aa;
 }
 
 :hover :focus {
